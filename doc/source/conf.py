@@ -50,10 +50,10 @@ class Mock(object):
             return Mock()
 
 MOCK_MODULES = [
-    'nose', 
-    'pylibmc', 
-    'pyinotify', 
-    'yaml', 
+    'nose',
+    'pylibmc',
+    'pyinotify',
+    'yaml',
     'tabulate',
     'configobj',
     'pystache', 'pystache.renderer',
@@ -69,6 +69,17 @@ sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
+
+import recommonmark
+from recommonmark.parser import CommonMarkParser
+from recommonmark.transform import AutoStructify
+
+source_parsers = {
+    '.md': CommonMarkParser,
+}
+
+# The suffix of source filenames.
+source_suffix = ['.rst', '.md']
 
 # -- General configuration -----------------------------------------------------
 
@@ -91,9 +102,6 @@ intersphinx_mapping = {'py': ('https://docs.python.org/3.4', None)}
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
-
-# The suffix of source filenames.
-source_suffix = '.rst'
 
 # The encoding of source files.
 #source_encoding = 'utf-8-sig'
@@ -277,3 +285,11 @@ man_pages = [
     ('index', 'cement', u'Cement Framework',
      [u'Data Folk Labs, LLC'], 1)
 ]
+
+
+def setup(app):
+    app.add_config_value('recommonmark_config', {
+            'url_resolver': lambda url: github_doc_root + url,
+            'auto_toc_tree_section': 'Contents',
+            }, True)
+    app.add_transform(AutoStructify)
