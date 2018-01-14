@@ -53,7 +53,7 @@ with MyApp() as app:
 
 Running the application shows the inner loop in action:
 
-```bash
+```console
 $ python myapp.py
 Inside MyController.default()
 Inside Inner Loop
@@ -68,7 +68,7 @@ Inside Inner Loop
 If we grab the PID in another terminal, and send it a SIGHUP signal we
 can see it reload:
 
-```bash
+```console
 $ ps auxw | grep [m]yapp
 derks            1317   0.0  0.1  2425792  12988 s001  S+   10:03PM   0:00.11 python myapp.py
 ```
@@ -76,7 +76,7 @@ derks            1317   0.0  0.1  2425792  12988 s001  S+   10:03PM   0:00.11 py
 In the original terminal (running our app) we see that the app reloads and the
 inner loop continues:
 
-```bash
+```console
 Caught signal 1
 WARNING: Reloading myapp
 Inside MyController.default()
@@ -86,7 +86,7 @@ Inside Inner Loop
 
 However, the PID remains the same:
 
-```bash
+```console
 $ ps auxw | grep [m]yapp
 derks            1317   0.0  0.1  2425792  13012 s001  S+   10:03PM   0:00.11 python myapp.py
 ```

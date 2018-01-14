@@ -4,7 +4,7 @@ Handling Arbitrary Extra Positional Arguments
 It is common practice to accept additional positional arguments at command
 line, rather than option flags.  For example:
 
-```bash
+```console
 $ myapp some-command some-argument --foo=bar
 ```
 
@@ -13,7 +13,7 @@ it is exposed from, and some-argument would be just an arbtrary argument.  In
 most cases, the argument within the code is generic, but its uses vary.  For
 example:
 
-```bash
+```console
 $ myapp create-user john.doe
 
 $ myapp create-group admins
@@ -75,11 +75,11 @@ def main():
 
 if __name__ == '__main__':
     main()
-```python
+```
 
 And this would look something like:
 
-```bash
+```console
 $ python argtest.py second cmd1 extra1 extra2
 Inside MySecondController.cmd1()
 Extra Argument 0: extra1

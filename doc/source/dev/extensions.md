@@ -224,7 +224,7 @@ extensions = json, yaml
 
 Which looks like:
 
-```bash
+```console
 $ python myapp.py --help
 usage: myapp.py (sub-commands ...) [options ...] {arguments ...}
 

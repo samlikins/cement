@@ -1,5 +1,3 @@
-.. _whats_new:
-
 What's New
 ==============================================================================
 
@@ -14,7 +12,7 @@ modules like `myplugin/__init__.py`.
 
 An example plugin might look like:
 
-```
+```console
 myplugin/
     __init__.py
     controllers.py
@@ -110,7 +108,7 @@ class MyApp(CementApp):
 
 
 If there were anything else in the `JsonOutputHandler` that the developer
-needed to subclass, this would be fine. However the purpose of the above is
+needed to subclass, this would be fine.  However the purpose of the above is
 soley to override `JsonOutputHandler.Meta.json_module`, which is tedious.
 
 As of Cement 2.9, the above can be accomplished more-easily by the following

@@ -1,6 +1,4 @@
-.. _projects_built_on_cement:
-
-Projects Built on Cement&trade;
+Projects Built on Cement™
 ==============================================================================
 
 The following is an incomplete lists of notable projects that are

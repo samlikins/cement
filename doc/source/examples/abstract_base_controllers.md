@@ -115,7 +115,7 @@ if __name__ == '__main__':
 
 And:
 
-```bash
+```console
 $ python myapp.py
 Inside MyAppBaseController.default()
 

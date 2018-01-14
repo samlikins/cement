@@ -209,14 +209,14 @@ with MyApp() as app:
 
 And the result is:
 
-```bash
+```console
 $ python my_hook_test.py
 Inside hook func3
 Inside hook func1
 Inside hook func2
 ```
 
-As you can see, it doesn’t matter what order we register the hook, the weight
+As you can see, it doesn't matter what order we register the hook, the weight
 runs then in order from lowest to highest.
 
 

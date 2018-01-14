@@ -82,7 +82,7 @@ foo = bar.dev
 
 This looks like:
 
-```bash
+```console
 $ python myapp.py
 Inside MyController.default()
 Current Environment: production

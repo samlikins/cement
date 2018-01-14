@@ -28,7 +28,7 @@ app.close()
 
 Running the application looks like:
 
-```bash
+```console
 $ python helloworld.py
 Hello World
 ```
@@ -38,7 +38,7 @@ joke right, all you did was print 'Hello World' to STDOUT.  What kind of
 framework is this?".  Well obviously this is just an introduction to show that
 the creation of an application is dead simple.  Lets take a look further:
 
-```bash
+```console
 $ python helloworld.py --help
 usage: helloworld.py [-h] [--debug] [--quiet]
 
@@ -50,7 +50,7 @@ optional arguments:
 
 Oh nice, ok... ArgParse is already setup with a few options I see.  What else?
 
-```bash
+```console
 $ python helloworld.py --debug
 2014-04-15 12:28:24,705 (DEBUG) cement.core.foundation : laying cement for the 'helloworld' application
 2014-04-15 12:28:24,705 (DEBUG) cement.core.hook : defining hook 'pre_setup'
@@ -157,7 +157,7 @@ with MyApp() as app:
 
 And execution:
 
-```bash
+```console
 $ python myapp.py --help
 usage: myapp.py (sub-commands ...) [options ...] {arguments ...}
 
@@ -237,7 +237,7 @@ as arguments and sub-commands via controller classes.
 
 Lets see what this looks like:
 
-```bash
+```console
 $ python myapp.py --help
 usage: myapp.py (sub-commands ...) [options ...] {arguments ...}
 

@@ -87,7 +87,7 @@ You should also note that Cement includes a '--debug' command line option by
 default.  This triggers the log level to 'DEBUG' and is helpful for quickly
 debugging issues:
 
-```bash
+```console
 $ python test.py --debug
 2012-07-13 02:19:42,270 (DEBUG) cement.core.foundation : laying cement for the 'myapp' application
 2012-07-13 02:19:42,270 (DEBUG) cement.core.hook : defining hook 'pre_setup'
@@ -140,7 +140,7 @@ $ python test.py --debug
 You can see that debug logging is extremely verbose.  In the above you will
 note the message format is:
 
-```bash
+```console
 TIMESTAMP - LEVEL - MODULE - MESSAGE
 ```
 
@@ -167,7 +167,7 @@ app.close()
 
 When running this script at command line you would get:
 
-```bash
+```console
 $ python test.py
 INFO: This is my info message
 ```
@@ -200,7 +200,7 @@ app.close()
 
 Running this we will see:
 
-```bash
+```console
 $ python test.py
 INFO: This is my info message
 
@@ -224,7 +224,7 @@ where that log is happening.  The 'namespace' defaults to the application name
 which you will see in every log like this:
 
 
-```bash
+```console
 2012-07-30 18:05:11,357 (DEBUG) myapp : This is my message
 ```
 
@@ -236,7 +236,7 @@ app.log.debug('This is my info message', __name__)
 
 Which looks like:
 
-```bash
+```console
 2012-07-30 18:05:11,357 (DEBUG) myapp.somepackage.test : This is my message
 ```
 
@@ -248,7 +248,7 @@ app.log.debug('This is my info message', '%s,L2734' % __file__)
 
 Which looks like:
 
-```bash
+```console
 2012-07-30 18:05:11,357 (DEBUG) myapp/somepackage/test.py,L2345 : This is my message
 ```
 

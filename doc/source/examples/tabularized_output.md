@@ -40,7 +40,7 @@ with MyApp() as app:
 
 The output looks like:
 
-```bash
+```console
 $ python myapp.py
 
 | NAME               |   AGE | ADDRESS                                 |

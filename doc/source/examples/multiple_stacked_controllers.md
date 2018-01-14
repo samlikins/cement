@@ -90,7 +90,7 @@ if __name__ == '__main__':
 In the base controller output of --help notice that the second-controller is
 listed as a sub-command:
 
-```bash
+```console
 $ python myapp.py --help
 usage: myapp.py (sub-commands ...) [options ...] {arguments ...}
 
@@ -151,7 +151,7 @@ nested on the base controller, and the third-controller is embedded on the
 second-controller.  Finally, we see that the fourth-controller is also nested
 on the second-controller creating a sub-sub-command.
 
-```bash
+```console
 $ python myapp.py second-controller command3
 Inside ThirdController.command3()
 
@@ -175,4 +175,4 @@ optional arguments:
 
 $ python myapp.py second-controller fourth-controller command4
 Inside FourthController.command4()
-```bash
+```

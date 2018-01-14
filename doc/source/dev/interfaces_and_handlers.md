@@ -426,7 +426,7 @@ with MyApp() as app:
 
 Note what we see at command line:
 
-```bash
+```console
 $ python myapp.py --help
 usage: myapp.py [-h] [--debug] [--quiet] [-o {yaml,json}]
 
@@ -444,7 +444,7 @@ not set this option, therefore it does not show up as a valid choice.
 
 Now what happens when we run it?
 
-```bash
+```console
 $ python myapp.py
 
 This text is being rendered via Mustache.
@@ -456,7 +456,7 @@ rendering the output text from a template called `default.m`.  We can now
 override the output handler using the `-o` option and modify the output
 format:
 
-```bash
+```console
 $ python myapp.py -o json
 {"foo": "bar"}
 ```

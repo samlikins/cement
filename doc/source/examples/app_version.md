@@ -36,7 +36,7 @@ with MyApp() as app:
 
 This looks like:
 
-```bash
+```console
 $ python myapp.py --help
 usage: myapp.py (sub-commands ...) [options ...] {arguments ...}
 

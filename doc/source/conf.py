@@ -290,6 +290,14 @@ man_pages = [
 def setup(app):
     app.add_config_value('recommonmark_config', {
             'url_resolver': lambda url: github_doc_root + url,
-            'auto_toc_tree_section': 'Contents',
+            'auto_toc_tree_section': [
+                'Documentation',
+                'Cement Core Modules',
+                'Cement Utility Modules',
+                'Cement Extension Modules',
+            ],
+            'enable_auto_toc_tree': True,
+            'enable_auto_doc_ref': True,
+            'enable_eval_rst': True,
             }, True)
     app.add_transform(AutoStructify)

@@ -12,13 +12,13 @@ Installation
 
 *Installing Stable Versions from PyPI:*
 
-```bash
+```console
 $ pip install cement
 ```
 
 *Installing Development Versions from Git:*
 
-```bash
+```console
 $ pip install -e git+git://github.com/datafolklabs/cement.git#egg=cement
 ```
 
@@ -29,7 +29,7 @@ Running Tests
 To run tests, you will need to ensure any dependent services are running (for
 example Memcached), and then do the following from the root of the source:
 
-```bash
+```console
 # Start services
 $ memcached &
 
@@ -48,6 +48,6 @@ Building Documentation
 
 To build this documentation, do the following from the root of the source:
 
-```bash
+```console
 $ python setup.py build_sphinx
 ```

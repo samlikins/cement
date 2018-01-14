@@ -65,7 +65,7 @@ app.close()
 Here we have setup a basic application, and then add a few arguments to the
 parser.
 
-```bash
+```console
 $ python test.py --help
 usage: test.py [-h] [--debug] [--quiet] [-f FOO] [-V] [-A]
 

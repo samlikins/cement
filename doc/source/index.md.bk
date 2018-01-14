@@ -96,26 +96,47 @@ We recommend moving this block and the preceding CSS link to the HEAD of your HT
 Documentation
 ------------------------------------------------------------------------------
 
-.. toctree::
-   :maxdepth: 1
-
-   changes
-   license
-   contributors
-   upgrading
-   whats_new
-   projects_built_on_cement
-   faq
-   api/index
-
-.. toctree::
-   :maxdepth: 2
-
-   dev/index
-
-.. toctree::
-   :maxdepth: 2
-
-   examples/index
+* [ChangeLog](changes.md)
+* [License](license.md)
+* [Contributors](contributors.md)
+* [Upgrading](upgrading.md)
+* [What's New](whats_new.md)
+* [Projects Built on Cement&trade;](projects_built_on_cement.md)
+* [Frequenty Asked Questions](faq.md)
+* [API Reference](api/index.md)
 
 
+* [Developer Documentation](dev/index.md)
+* [Installation](dev/installation.md)
+* [Quick Start](dev/quickstart.md)
+* [Interfaces and Handlers](dev/interfaces_and_handlers.md)
+* [Configuration Handling](dev/configuration.md)
+* [Argument and Option Handling](dev/arguments.md)
+* [Log Handling](dev/logging.md)
+* [Output Handling](dev/output.md)
+* [Application Controllers](dev/controllers.md)
+* [Framework Extensions](dev/extensions.md)
+* [Application Plugins](dev/plugins.md)
+* [Framework and Application Hooks](dev/hooks.md)
+* [Extending CementApp](dev/extending_cementapp.md)
+* [Signal Handling](dev/signal_handling.md)
+* [Application Cleanup](dev/cleanup.md)
+* [Caching](dev/caching.md)
+* [Sending Email Messages](dev/mail.md)
+* [Unit Testing Your Application](dev/testing.md)
+* [Application Design](dev/application_design.md)
+* [Starting Projects from Boss Templates](dev/boss_templates.md)
+* [Contributing](dev/contributing.md)
+
+
+* [Examples](examples/index.md)
+* [Adding a Version Option to Your App<](examples/app_version.md)
+* [Multiple Stacked Controllers<](examples/multiple_stacked_controllers.md)
+* [Abstract Base Controllers for Shared Arguments and Commands<](examples/abstract_base_controllers.md)
+* [Multiple Controllers With Same Label<](examples/controllers_with_same_label.md)
+* [BASH Auto Completion<](examples/bash_auto_completion.md)
+* [Handling Arbitrary Extra Positional Arguments<](examples/arbitrary_extra_arguments.md)
+* [Auto Reload When Configuration Files Change<](examples/reload_config.md)
+* [Tabularized Output<](examples/tabularized_output.md)
+* [Reload Application on SIGHUP<](examples/sighup_reload.md)
+* [Managing Multiple Environments<](examples/managing_multiple_environments.md)

@@ -39,9 +39,9 @@ end in `.conf` (or the extension defined by
 Note: Though `CementApp.Meta.plugin_config_dirs` is `None`, Cement will set
 this to a default list based on `CementApp.Meta.label`.  This will equate to:
 
-~~~~ {.sourceCode .python}
+```python
 ['/etc/<app_label>/plugins.d', '~/.<app_label>/plugin.d']
-~~~~
+```
 
 Files are loaded in order, and have precedence in that order.  Therefore, the
 last configuration loaded has precedence (and overwrites settings loaded from
@@ -84,9 +84,9 @@ A list of directory paths where plugin code (modules) can be loaded from.
 Note: Though `CementApp.Meta.plugin_dirs` is None, Cement will set this to a
 default list based on `CementApp.Meta.label` if not set.  This will equate to:
 
-~~~~ {.sourceCode .python}
+```python
 ['~/.<app_label>/plugins', '/usr/lib/<app_label>/plugins']
-~~~~
+```
 
 Modules are attempted to be loaded in order, and will stop loading once a
 plugin is successfully loaded from a directory.  Therefore this is the oposite
@@ -260,7 +260,7 @@ def load(app):
 
 Running our application with the plugin disabled, we see:
 
-```bash
+```console
 $ python myapp.py --help
 usage: myapp.py (sub-commands ...) [options ...] {arguments ...}
 
@@ -274,7 +274,7 @@ optional arguments:
 
 But if we enable the plugin, we get something a little different:
 
-```bash
+```console
 $ python myapp.py --help
 usage: myapp.py (sub-commands ...) [options ...] {arguments ...}
 
@@ -341,7 +341,7 @@ def load(app):
 And with the plugin enabled, we get this when we run the same app defined
 above:
 
-```bash
+```console
 $ python myapp.py
 Something Magical is Happening!
 ```
@@ -350,7 +350,7 @@ The primary detail is that Cement calls the load() function of a plugin...
 after that, you can do anything you like.
 
 
-Single File Plugins vs.  Plugin Directories
+Single File Plugins vs. Plugin Directories
 ------------------------------------------------------------------------------
 
 As of Cement 2.9.x, plugins can be either a single file (i.e `myplugin.py`) or

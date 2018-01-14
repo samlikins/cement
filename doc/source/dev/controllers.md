@@ -82,7 +82,7 @@ with MyApp() as app:
 As you can see, we're able to build out the core functionality of our app via
 a controller class.  Lets see what this looks like:
 
-```bash
+```console
 $ python example.py --help
 usage: example.py <CMD> -opt1 --opt2=VAL [arg1] [arg2] ...
 

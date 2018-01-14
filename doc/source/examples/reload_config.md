@@ -56,7 +56,7 @@ with MyApp() as app:
 
 The output looks something like:
 
-```bash
+```console
 $ python myapp.py --debug
 
 Inside Base.default()

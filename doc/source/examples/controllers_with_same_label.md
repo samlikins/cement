@@ -9,7 +9,7 @@ must be unique.
 Take for example the situation where you want to have a 'list' controller,
 rather than a 'list' function of another controller.  You might call this as:
 
-```bash
+```console
 $ myapp <controller1> <list_controller>
 
 $ myapp <controller2> <some_other_list_controller>
@@ -88,7 +88,7 @@ if __name__ == '__main__':
     main()
 ```
 
-```bash
+```console
 $ python myapp.py --help
 usage: myapp.py (sub-commands ...) [options ...] {arguments ...}
 

@@ -106,7 +106,7 @@ if __name__ == '__main__':
 
 This looks like:
 
-```bash
+```console
 $ python myapp.py --help
 usage: myapp.py (sub-commands ...) [options ...] {arguments ...}
 
@@ -147,7 +147,7 @@ For demonstration purposes, we are going to create a BASH alias here so that
 we can call our myapp command name as if we would in production (not
 development):
 
-```bash
+```console
 $ alias myapp="python ./myapp.py"
 ```
 
@@ -241,7 +241,7 @@ complete -F _myapp_complete myapp
 
 You would then "source" the RC file:
 
-```bash
+```console
 $ source myapp.rc
 ```
 
@@ -250,7 +250,7 @@ such at `/etc/profile.d` or similar (in a production deployment).
 
 Finally, this is what it looks like:
 
-```bash
+```console
 # show all sub-commands at the base level
 $ myapp [tab] [tab]
 base-cmd1      base-cmd2      embedded-cmd3      second

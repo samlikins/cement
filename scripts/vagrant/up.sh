@@ -8,7 +8,7 @@ export DEBIAN_FRONTEND=noninteractive
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get dist-upgrade -y
-sudo apt-get install -y apt-transport-https ca-certificates
+sudo apt-get install -y apt-transport-https ca-certificates software-properties-common
 sudo apt-key adv \
     --keyserver hkp://p80.pool.sks-keyservers.net:80 \
     --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
@@ -27,14 +27,14 @@ sudo apt-get install -y \
     python3-pip \
     memcached \
     libmemcached-dev \
-    zlib1g-dev \
-    docker-engine
+    zlib1g-dev #\
+#    docker-engine
 
 sudo apt-get autoremove -y 
 sudo pip3 install virtualenv
 
 # for docker stuff
-sudo usermod -aG docker vagrant
+# sudo usermod -aG docker vagrant
 
 ### fix me - install docker-compose here
 

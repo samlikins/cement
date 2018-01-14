@@ -87,7 +87,7 @@ app = foundation.CementApp('myapp', output_handler=MyOutputHandler)
 
 Which looks like:
 
-```bash
+```console
 $ python test.py
 foo => bar
 ```
@@ -147,7 +147,7 @@ The value of the 'foo' variable is => '{{foo}}'
 
 And this looks like:
 
-```bash
+```console
 $ python myapp.py
 
 This is the output of the MyBaseController.default() command.
@@ -158,7 +158,7 @@ The value of the 'foo' variable is => 'bar'
 Optionally, we can use the `JsonOutputHandler` via `-o json` to trigger just
 Json output (supressing all other output) using our return dictionary:
 
-```bash
+```console
 $ python myapp.py -o json
 {"foo": "bar"}
 ```

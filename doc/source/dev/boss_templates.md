@@ -13,7 +13,7 @@ with Boss.
 Creating a Cement App
 ------------------------------------------------------------------------------
 
-```bash
+```console
 $ boss create ./myapp -t boss:cement-app
 
 $ cd myapp
@@ -37,7 +37,7 @@ $ python setup.py nosetests
 Creating a Cement Plugin
 ------------------------------------------------------------------------------
 
-```bash
+```console
 $ source /path/to/myapp/env/bin/activate
 
 $ cd /path/to/myapp
@@ -72,7 +72,7 @@ Creating a Cement Extension
 with, but do not have to be. In this case we are adding the extension to an
 existing Cement project:
 
-```bash
+```console
 $ boss create ./myapp -t boss:cement-ext
 ```
 
