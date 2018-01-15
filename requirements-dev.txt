@@ -2,7 +2,7 @@
 nose
 coverage
 sphinx
-recommonmark
+m2r
 pep8
 autopep8
 flake8

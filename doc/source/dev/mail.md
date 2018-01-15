@@ -2,7 +2,7 @@ Sending Email Messages
 ==============================================================================
 
 Cement defines a mail interface called :ref:`IMail <cement.core.mail>`, as
-well as the default :red:`DummyMailHandler <cement.ext.ext_dummy>` that
+well as the default :ref:`DummyMailHandler <cement.ext.ext_dummy>` that
 implements the interface.
 
 Please note that there are other handlers that implement the `IMail`

@@ -13,5 +13,5 @@ Built on Cement&trade;:
 
 
 If you are building a project on the Cement Framework and would like to see
-your company or project listed here please [create an issue and/or pull
-request on GitHub](https://github.com/datafolklabs/cement/).
+your company or project listed here please
+[create an issue and/or pull request on GitHub](https://github.com/datafolklabs/cement/).

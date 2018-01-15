@@ -7,8 +7,6 @@ Cement Core Modules
 ------------------------------------------------------------------------------
 
 .. toctree::
-   :maxdepth: 1
-
    core/arg
    core/backend
    core/cache
@@ -32,8 +30,6 @@ Cement Utility Modules
 ------------------------------------------------------------------------------
 
 .. toctree::
-   :maxdepth: 1
-
    utils/fs
    utils/shell
    utils/misc
@@ -45,8 +41,6 @@ Cement Extension Modules
 ------------------------------------------------------------------------------
 
 .. toctree::
-   :maxdepth: 1
-
    ext/ext_alarm
    ext/ext_argcomplete
    ext/ext_argparse

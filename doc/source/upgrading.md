@@ -358,7 +358,7 @@ than `cement.ext`, such as `myapp.ext`.
 
 Related:
 
- * :isue:`202`
+ * :issue:`202`
 
 
 ### LoggingLogHandler Changes

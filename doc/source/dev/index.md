@@ -6,8 +6,6 @@ Cement. It outlines the features of the Cement Framework and how to use them
 in your applications.
 
 .. toctree::
-   :maxdepth: 20
-
    installation
    quickstart
    interfaces_and_handlers

@@ -20,7 +20,7 @@ Genshi Syntax Basics
 Where `user_name` is a variable returned from the controller. Will
 display:
 
-```
+```console
     Hello Johnny
 ```
 
@@ -44,7 +44,7 @@ Will only output `Label: &lt;label>` if `foo == True`.
 
 Where `items` is a list returned from the controller. Will display:
 
-```
+```console
     - list item 1
     - list item 2
     - list item 3
@@ -63,7 +63,7 @@ Where `items` is a list returned from the controller. Will display:
 
 Will output:
 
-```
+```console
     Hello, World!
     Hello, Edward!
 ```
@@ -82,7 +82,7 @@ Will output:
 
 Output looks like:
 
-```
+```console
     $ helloworld list-plugins
 
     label               ver       description

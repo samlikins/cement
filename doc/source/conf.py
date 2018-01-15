@@ -70,13 +70,11 @@ sys.modules.update((mod_name, Mock()) for mod_name in MOCK_MODULES)
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
 
-import recommonmark
-from recommonmark.parser import CommonMarkParser
-from recommonmark.transform import AutoStructify
+# import m2r
 
-source_parsers = {
-    '.md': CommonMarkParser,
-}
+# source_parsers = {
+#     '.md': m2r,
+# }
 
 # The suffix of source filenames.
 source_suffix = ['.rst', '.md']
@@ -91,7 +89,8 @@ source_suffix = ['.rst', '.md']
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.extlinks',
-    'sphinx.ext.intersphinx'
+    'sphinx.ext.intersphinx',
+    'm2r'
     ]
 
 extlinks = {
@@ -285,19 +284,3 @@ man_pages = [
     ('index', 'cement', u'Cement Framework',
      [u'Data Folk Labs, LLC'], 1)
 ]
-
-
-def setup(app):
-    app.add_config_value('recommonmark_config', {
-            'url_resolver': lambda url: github_doc_root + url,
-            'auto_toc_tree_section': [
-                'Documentation',
-                'Cement Core Modules',
-                'Cement Utility Modules',
-                'Cement Extension Modules',
-            ],
-            'enable_auto_toc_tree': True,
-            'enable_auto_doc_ref': True,
-            'enable_eval_rst': True,
-            }, True)
-    app.add_transform(AutoStructify)
